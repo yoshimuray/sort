@@ -12,7 +12,6 @@ A[0], A[1], ..., A[n-1] の中でk+1番目に小さい値を返す関数
 int quick_select(int A[], int n, int k){
   int i, j, pivot;
 
-// 先頭の要素をピボットとする
   pivot = A[n/2];
   A[n/2] = A[0];
   A[0] = pivot;
