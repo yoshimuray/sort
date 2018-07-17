@@ -19,7 +19,8 @@ int quick_select(int A[], int n, int k){
     if(A[i] < pivot){
       int z = A[j];
       A[j] = A[i];
-      A[i] = z;
+      A[i] = A[k];
+      A[k] = z;
       j++;
       l++;
     }else if(A[i] == pivot){
