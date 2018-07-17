@@ -17,10 +17,10 @@ int quick_select(int A[], int n, int k){
   A[0] = pivot;
   for(i = j = l = 1; i < n; i++){
     if(A[i] < pivot){
-      int z = A[j];
-      A[j] = A[i];
-      A[i] = A[k];
-      A[k] = z;
+      int z = A[i];
+      A[i] = A[l];
+      A[l] = A[j];
+      A[j] = z;
       j++;
       l++;
     }else if(A[i] == pivot){
